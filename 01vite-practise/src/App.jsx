@@ -2,9 +2,9 @@ import {React,  useState } from 'react';
 import StateHook from './Components/stateHook';
 import UseEffectHook from './Components/UseEffectHook';
 import UseRefHook from './Components/UseRefHook';
-import UseConHook from './Components/UseHookMemo';
 import ChildA from './Components/ChildA';
 import UseHookMemo from './Components/UseHookMemo';
+import UseCalHook from './Components/UseCalHook';
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
   <UseRefHook/>
   <ChildA/>
   <UseHookMemo/>
+  <UseCalHook/>
   </>
   );
 }
