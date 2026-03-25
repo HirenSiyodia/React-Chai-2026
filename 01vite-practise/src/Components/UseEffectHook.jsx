@@ -7,7 +7,7 @@ const UseEffectHook = () => {
   useEffect(() => {
     if (counter === "seeta") {
         alert("changed to seeta useEffect wroked")
-    }
+    } 
   }, [counter]);
 
   return (
