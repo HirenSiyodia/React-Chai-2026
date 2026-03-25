@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
-
+// useCallBack= Memoize Function
+// Prevents unnecesary re-creation of functions
 const UseCalHook = () => {
   const [value, setValue] = useState(0);
   const [count, setCount] = useState(0);
