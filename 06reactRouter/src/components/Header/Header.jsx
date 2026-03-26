@@ -53,7 +53,7 @@ export default function Header() {
                   About Us
                 </NavLink>
               </li>
-
+                    {/*  Contact Us */}
               <li>
                 <NavLink to="/contact"
                   className={({ isActive }) =>
@@ -61,6 +61,26 @@ export default function Header() {
                   }
                 >
                   Contact Us
+                </NavLink>
+              </li>
+                  {/* GitHub */}
+              <li>
+                <NavLink to="/github"
+                  className={({ isActive }) =>
+                    `${isActive ? "text-orange-700" : "text-gray-700"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  GitHub
+                </NavLink>
+              </li>
+{/* Loader */}
+              <li>
+                <NavLink to="/loader"
+                  className={({ isActive }) =>
+                    `${isActive ? "text-orange-700" : "text-gray-700"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Loader
                 </NavLink>
               </li>
             </ul>
