@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scopping</title>
+</head>
+<body>
+    <h1>Lexical scope</h1>
+</body>
+<script>
+    function outer(){
+        let username = "Hiren"
+        function inner(){
+            var age = 22;
+            console.log("Inner", username);
+
+            function inner1(){
+            console.log("Inner1", age);
+        }
+
+        inner1();
+        }               
+        inner();
+    }
+    outer();
+
+</script>
+</html>
